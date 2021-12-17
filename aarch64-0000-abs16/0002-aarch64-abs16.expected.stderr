@@ -1,0 +1,1 @@
+ld: fatal: relocation error: 0x103: file 0002-aarch64-abs16.o: symbol foo: value 0x10000 does not fit

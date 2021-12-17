@@ -1,0 +1,4 @@
+
+t1.so:	file format elf64-littleaarch64
+Contents of section .text:
+ 05c0 01000014                             ....

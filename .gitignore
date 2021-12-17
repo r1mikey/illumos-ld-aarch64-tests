@@ -1,0 +1,7 @@
+*.o
+*.so
+*.exe
+*.a
+*.bin
+*.actual.stderr
+*.actual.stdout

@@ -1,0 +1,4 @@
+
+t1.so:	file format elf64-littleaarch64
+Contents of section .text:
+ 0600 20000854                              ..T

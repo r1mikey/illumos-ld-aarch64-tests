@@ -1,0 +1,4 @@
+
+t3.exe:	file format elf64-littleaarch64
+Contents of section .data:
+ 2106c0 ffffffff 00000080                    ........

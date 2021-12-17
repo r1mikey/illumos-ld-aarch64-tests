@@ -1,0 +1,4 @@
+
+t1.exe:	file format elf64-littleaarch64
+Contents of section .text:
+ 2004e4 743ec13d 1f2003d5 1f2003d5 666f6f00  t>.=. ... ..foo.
