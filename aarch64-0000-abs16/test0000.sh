@@ -4,8 +4,8 @@ TESTNUM="0000"
 
 LD=/ws/illumos-gate/proto/root_i386/usr/bin/amd64/ld
 ILLUMOS_LD_LD_LIBRARY_PATH=/ws/illumos-gate/proto/root_i386/lib/64
-AS="/opt/ooce/llvm-13.0/bin/llvm-mc -filetype=obj -triple=aarch64"
-OBJDUMP="/opt/ooce/llvm-13.0/bin/llvm-objdump"
+AS="/opt/ooce/llvm-13/bin/llvm-mc -filetype=obj -triple=aarch64"
+OBJDUMP="/opt/ooce/llvm-13/bin/llvm-objdump"
 
 TSTSRC0=aarch64-abs16.s
 TSTOBJ0=${TESTNUM}-aarch64-abs16.o

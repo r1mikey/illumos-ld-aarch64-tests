@@ -8,7 +8,7 @@ AS=/ws/cross-extra/proto/armv8/usr/gnu/bin/gas
 LD=/ws/illumos-gate/proto/root_i386/usr/bin/amd64/ld
 # LD=/ws/illumos-gate/proto/root_i386/usr/bin/ld
 # LD=/ws/cross-extra/proto/armv8/usr/gnu/bin/gld
-MC="/opt/ooce/llvm-13.0/bin/llvm-mc -filetype=obj -triple=aarch64"
+MC="/opt/ooce/llvm-13/bin/llvm-mc -filetype=obj -triple=aarch64"
 
 rm -f *.exe *.o *.so core *.actual
 
@@ -57,7 +57,7 @@ ${MC} -o t1.o ${ASMSRC1}
 ${MC} -o t3.o ${ASMSRC3}
 LD_LIBRARY_PATH=/ws/illumos-gate/proto/root_i386/lib/64 \
   ${LD} -z type=exec -o t3.exe t1.o t3.o
-/opt/ooce/llvm-13.0/bin/llvm-objdump -s --section=.data t3.exe > t3.actual
+/opt/ooce/llvm-13/bin/llvm-objdump -s --section=.data t3.exe > t3.actual
 if ! cmp -s t3.expected t3.actual; then
   echo "FAIL: [0] mismatched output" 1>&2
   exit 1
@@ -97,4 +97,4 @@ rm -f *.exe *.o *.so core *.actual
 echo "PASS"
 exit 0
 
-# /opt/ooce/llvm-13.0/bin/llvm-objdump -s --section=.data t.exe
+# /opt/ooce/llvm-13/bin/llvm-objdump -s --section=.data t.exe
